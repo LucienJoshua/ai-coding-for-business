@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wsl -d Ubuntu-22.04 -- /bin/bash -c \"echo 'WSL Ubuntu-22.04 is running' && pwd\")",
+      "Bash(cmd.exe /c \"wsl -d Ubuntu-22.04 -- /bin/bash -c \\\\\"echo WSL test && pwd\\\\\"\")",
+      "Bash(powershell.exe -Command \"& { wsl.exe -d Ubuntu-22.04 bash -c 'cd /home/jse/net_proxy_v2 && make clean && make 2>&1' }\")"
+    ]
+  }
+}
