@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file_config>
+	<file_base filedir="./filedir" blockcount="1024" blocksize="5120"/>
+	<!-- 注: interval 为网关传输服务读取文件并发送的时间间隔，单位为毫秒 -->
+	<file_publish interval="100" dstdaddr="90" dstentry="3001" url="/file_update"/>
+	<file_subscribe servername="127.0.0.1:4001" serverpass="123456" url="/file_update/"/>
+</file_config>

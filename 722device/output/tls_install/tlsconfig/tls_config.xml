@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tls_config>
+	<tls_transmit_queue>
+		<queue priority="0" buffsize="5120" buffcount="1536"/>
+		<queue priority="1" buffsize="8192" buffcount="1024"/>
+		<queue priority="2" buffsize="4096" buffcount="1024"/>
+		<queue priority="3" buffsize="4096" buffcount="1024"/>
+		<queue priority="4" buffsize="4096" buffcount="1024"/>
+		<queue priority="5" buffsize="2048" buffcount="640"/>
+		<queue priority="6" buffsize="2048" buffcount="512"/>
+		<queue priority="7" buffsize="2048" buffcount="128"/>
+	</tls_transmit_queue>
+	<tls_udp local_ip="127.0.0.1" local_port="9000" remote_ip="127.0.0.1" remote_port="6005" local_id="90" local_sub_id="3001"/>
+	<tls_subscribe servername="192.168.3.211:3001" serverpass="123456" url="/csfw722/"/>
+	<tls_publish servername="tls_vsoa_server" serverpass="123456" serverip="0.0.0.0" serverport="3001" url="/csfw722"/>
+</tls_config>

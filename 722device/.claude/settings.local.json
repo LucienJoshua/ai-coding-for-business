@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -Command \"wsl -- ls /home/ 2>/dev/null || wsl -- ls /root/ 2>/dev/null || echo 'WSL not accessible'\")",
+      "Bash(wsl ls *)",
+      "Bash(powershell.exe -Command \"Get-ChildItem '\\\\\\\\\\\\\\\\wsl.localhost\\\\\\\\' -ErrorAction SilentlyContinue | Select-Object Name\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem '\\\\\\\\\\\\\\\\wsl$\\\\\\\\Ubuntu\\\\\\\\home\\\\\\\\' -ErrorAction SilentlyContinue | Select-Object Name\")",
+      "Bash(powershell.exe -Command \"netstat -an | Select-String '22.*LISTENING'\")",
+      "Bash(powershell.exe -Command \"netstat -an | Select-String '22.*LISTEN'\")",
+      "Bash(powershell.exe -Command \"ipconfig | Select-String 'WSL'\")",
+      "Bash(powershell.exe -Command \"bash --version\")",
+      "Bash(scp /e/claude-code/net_proxy_project/722device/network/tls_net_proxy.h jse@localhost:/home/jse/722device/network/)",
+      "Bash(wsl -d Ubuntu -e ls /home/jse/722device)",
+      "Bash(powershell.exe -Command \"Get-ChildItem '\\\\\\\\\\\\\\\\wsl$\\\\\\\\Ubuntu\\\\\\\\home\\\\\\\\jse\\\\\\\\722device' -ErrorAction SilentlyContinue | Select-Object Name\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem '\\\\\\\\\\\\\\\\wsl.localhost\\\\\\\\Ubuntu\\\\\\\\home\\\\\\\\jse\\\\\\\\722device' -ErrorAction SilentlyContinue | Select-Object Name\")"
+    ]
+  }
+}

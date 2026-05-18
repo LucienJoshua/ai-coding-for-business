@@ -1,0 +1,25 @@
+{
+    "link_map": [
+        {
+            "id": 90,
+            "dest_ip": "192.168.3.20",
+            "dest_port": 3001,
+            "protocol": 1
+        },
+        {
+            "id": 91,
+            "dest_ip": "192.168.3.21",
+            "dest_port": 3002,
+            "protocol": 2
+        },
+        {
+            "id": 92,
+            "dest_ip": "192.168.3.22",
+            "dest_port": 3003,
+            "protocol": 1
+        }
+    ],
+    "default_port": 8888,
+    "listen_tcp_port": 9888,
+    "listen_udp_port": 9889
+}

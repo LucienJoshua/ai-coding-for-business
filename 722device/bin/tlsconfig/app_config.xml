@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app_config>
+	<app_udp localip="127.0.0.1" localport="10000" remoteip="127.0.0.1" remoteport="10000" remoteid="2" remotesubid="2"/>
+	<app_rpc_server servername="app_rpc_server" serverpass="123456" serverip="0.0.0.0" serverport="3003" listenerurl="/tolink/"/>
+	<app_publish servername="app_publish_server" serverpass="123456" serverip="0.0.0.0" serverport="3004" publisurl="/fromlink/"/>
+	<app_subscribe servername="127.0.0.1:3022" serverpass="123456" suburl="/"/>
+</app_config>
